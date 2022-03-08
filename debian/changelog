@@ -1,0 +1,5 @@
+podman-aardvark-dns (100:1.0.3-1) UNRELEASED; urgency=medium
+
+  * https://github.com/containers/aardvark-dns/releases/tag/v1.0.3
+
+ -- Wong Hoi Sing Edison <hswong3i@gmail.com>  Fri, 06 May 2022 10:53:36 +0800
