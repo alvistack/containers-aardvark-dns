@@ -1,0 +1,6 @@
+*.substvars
+*debhelper*
+.debhelper
+podman-aardvark-dns
+files
+tmp
