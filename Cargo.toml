@@ -38,4 +38,10 @@ nix = "0.26.2"
 libc = "0.2"
 
 [build-dependencies]
-chrono = "0.4.24"
+chrono = "*"
+
+[profile.release]
+lto = true
+opt-level = "z"
+codegen-units = 1
+panic = "abort"
