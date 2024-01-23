@@ -38,4 +38,10 @@ nix = { version = "0.27.1", features = ["fs", "signal"] }
 libc = "0.2"
 
 [build-dependencies]
-chrono = "0.4.32"
+chrono = "*"
+
+[profile.release]
+lto = true
+opt-level = "z"
+codegen-units = 1
+panic = "abort"
