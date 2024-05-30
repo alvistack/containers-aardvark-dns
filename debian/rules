@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+SHELL := /bin/bash
+
+override_dh_auto_build:
+	cargo build --release
+
+override_dh_auto_install:
+	install -Dpm755 -d debian/tmp/usr/libexec/podman
+	install -Dpm755 -t debian/tmp/usr/libexec/podman target/release/aardvark-dns
+
+override_dh_auto_test:
+
+override_dh_auto_clean:
+
+%:
+	dh $@
