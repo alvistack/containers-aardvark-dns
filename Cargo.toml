@@ -37,4 +37,10 @@ arc-swap = "1.7.1"
 flume = "0.11.0"
 
 [build-dependencies]
-chrono = "0.4.38"
+chrono = "*"
+
+[profile.release]
+lto = true
+opt-level = "z"
+codegen-units = 1
+panic = "abort"
