@@ -1,0 +1,4 @@
+podman-aardvark-dns source: file-without-copyright-information
+podman-aardvark-dns source: no-debian-changes
+podman-aardvark-dns source: no-debian-copyright-in-source
+podman-aardvark-dns source: source-contains-prebuilt-ms-help-file
