@@ -39,4 +39,10 @@ inotify = "0.11.2"
 futures = "0.3.32"
 
 [build-dependencies]
-chrono = "0.4.45"
+chrono = "*"
+
+[profile.release]
+lto = true
+opt-level = "z"
+codegen-units = 1
+panic = "abort"
